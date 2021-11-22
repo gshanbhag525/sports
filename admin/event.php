@@ -111,10 +111,10 @@ require_once("../db.php");
                     <div class="form-content">
                       <form action="add-event.php" method="post" enctype="multipart/form-data">
                         <label for="event">Event name</label>
-                        <input type="text" name="event" id="event" >
+                        <input type="text" name="event" id="event" required>
 
                         <label for="description">Description</label>
-                        <textarea name="description" id="description" rows="3" cols="100"></textarea>
+                        <textarea name="description" id="description" rows="3" cols="100" required></textarea>
                         
                         <label for="categoryname">Category</label>
                         <select name="categoryname" id="categoryname">
@@ -134,17 +134,17 @@ require_once("../db.php");
                         </select>
                         
                         <label for="date">Date</label>
-                        <input name="date" type="date" id="eventdate" min="2021-01-01" max="2050-01-31">
+                        <input name="date" type="date" id="eventdate" min="2021-01-01" max="2050-01-31" required>
                         <!-- <label for="date" id="eventdateerror" style="display: none;">Invalid date </label> -->
                         
                         <label for="image">Select Image File:</label><br>
-                        <input type="file" name="image" type="file"><br>
+                        <input type="file" name="image" type="file" required><br>
 
                         <label for="enableevent">Enable/Disable Event</label>
-                        <input type="checkbox" name="enableevent" value=""><br>
+                        <input type="checkbox" name="enableevent" value="" required><br>
                         
                         <label for="featuredevent">Featured Event</label>
-                        <input type="checkbox" name="featuredevent" value="" >
+                        <input type="checkbox" name="featuredevent" value="" required>
                         
                         <input type="submit" value="Submit">  
                       </form>

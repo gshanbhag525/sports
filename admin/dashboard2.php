@@ -136,8 +136,6 @@ require_once("../db.php");
                         <td><?php echo ++$i; ?></td>
                         <td><?php echo $row['name']; ?></td>
                         <td>
-                          <i class="far fa-eye"></i>
-                          <i class="far fa-edit"></i>
                           <a href="delete-category.php?id=<?php echo $row['category_id']; ?>">
                             <i class="far fa-trash-alt"></i>
                           </a>
@@ -148,16 +146,6 @@ require_once("../db.php");
                   }
                 }
               ?>
-                <!-- <tr>
-                  <td>1</td>
-                  <td>Cricket</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr> 
-              -->
               </tbody>
             </table>
           </div>
@@ -171,9 +159,6 @@ require_once("../db.php");
                 <td>Sno</td>
                 <td>Name</td>
                 <td>Description</td>
-                <td>Date</td>
-                <!-- <td>Image</td> -->
-                
                 <td>Action</td>
               </thead>
               <tbody>
@@ -188,11 +173,7 @@ require_once("../db.php");
                         <td><?php echo ++$i; ?></td>
                         <td><?php echo $row['name']; ?></td>
                         <td><?php echo $row['description']; ?></td>
-                        <td><?php echo $row['e_date']; ?></td>
-                        <!-- <td><?php echo $row['e_image']; ?></td> -->
                         <td>
-                          <i class="far fa-eye"></i>
-                          <i class="far fa-edit"></i>
                           <a href="delete-category.php?id=<?php echo $row['category_id']; ?>">
                             <i class="far fa-trash-alt"></i>
                           </a>

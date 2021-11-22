@@ -64,21 +64,6 @@ if(isset($_POST)) {
 
 	$stmt->close();
 
-	//THIS IS NOT SAFE FROM SQL INJECTION BUT OK TO USE WITH SMALL TO MEDIUM SIZE AUDIENCE
-
-	//Insert Job Post Query 
-	// $sql = "INSERT INTO job_post(id_company, jobtitle, description, minimumsalary, maximumsalary, experience, qualification) VALUES ('$_SESSION[id_user]','$jobtitle', '$description', '$minimumsalary', '$maximumsalary', '$experience', '$qualification')";
-
-	// if($conn->query($sql)===TRUE) {
-	// 	//If data Inserted successfully then redirect to dashboard
-	// 	$_SESSION['jobPostSuccess'] = true;
-	// 	header("Location: dashboard.php");
-	// 	exit();
-	// } else {
-	// 	//If data failed to insert then show that error. Note: This condition should not come unless we as a developer make mistake or someone tries to hack their way in and mess up :D
-	// 	echo "Error " . $sql . "<br>" . $conn->error;
-	// }
-
 	//Close database connection. Not compulsory but good practice.
 	$conn->close();
 

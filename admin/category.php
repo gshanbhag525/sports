@@ -111,7 +111,7 @@ require_once("../db.php");
                     <div class="form-content">
                       <form action="add-category.php" method="post">
                         <label for="category">Category</label>
-                        <input id="category" type="text" name="category" placheholder="Enter category name">
+                        <input id="category" type="text" name="category" placheholder="Enter category name" required>
                         <input type="submit" value="Submit">  
                       </form>
                     </div>
